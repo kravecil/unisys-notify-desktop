@@ -1,0 +1,23 @@
+{
+  "autorun": true,
+  "terminals": [
+    {
+      "name": "dev",
+      "focus": true
+    },
+    {
+      "name": "quasar",
+      "focus": false
+    },
+    {
+      "name": "websockets",
+      "focus": false,
+      "commands": [
+        "cd ~/Homestead",
+        "vagrant ssh",
+        "cd /home/vagrant/unisys/unisys-ws",
+        "php artisan websockets:serve"
+      ]
+    }
+  ]
+}
